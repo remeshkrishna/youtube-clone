@@ -7,6 +7,7 @@ import { appStore } from './store/appStore.js'
 import { RouterProvider,createBrowserRouter } from 'react-router-dom'
 import Body from './components/Body.jsx'
 import DisplayVideo from './components/DisplayVideo.jsx'
+import MainScreen from './components/MainScreen.jsx'
 
 const router=createBrowserRouter([
   {
@@ -15,7 +16,7 @@ const router=createBrowserRouter([
     children:[
       {
         path: '',
-        element: <Body/>
+        element: <MainScreen/>
       },
       {
         path: '/watch',

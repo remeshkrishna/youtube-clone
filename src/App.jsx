@@ -14,8 +14,7 @@ function App() {
   return (
     <div className='w-full'>
       <Header/>
-      <Outlet/>
-      {/* <Body/> */}
+      <Body/>
     </div>
   )
 }
