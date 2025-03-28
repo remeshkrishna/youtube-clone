@@ -9,6 +9,7 @@ const DisplayVideo = () => {
     const [params] = useSearchParams()
     const videoId = params.get('v')
     const video = videoSelector?.filter((item)=>item.id === videoId)[0]
+    console.log(video)
     const channel_logo = channels?.[video?.snippet.channelId]?.snippet.thumbnails.default.url
     const channel_name = channels?.[video?.snippet.channelId]?.snippet.title
   return (

@@ -101,9 +101,7 @@ const SideMenu = () => {
             <p>YouTube Kids</p>
         </div>
         <div className='p-2 border-b border-gray-300'></div>
-        <div className='p-2 hover:bg-gray-200 rounded-lg font-semibold'>
-            <p>Subscriptions</p>
-        </div>
+        
         <SubscriptionList/>
 
         <div className='p-2 hover:bg-gray-200 rounded-lg'></div>
