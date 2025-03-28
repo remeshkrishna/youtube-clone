@@ -14,7 +14,6 @@ const VideoList = () => {
         const channelList = videos?.map((item)=>item.snippet.channelId).join(',')
         const data = await fetch('https://www.googleapis.com/youtube/v3/channels?part=snippet,status&id='+channelList+'&key='+API_KEY)
         const dataJson = await data.json()
-        console.log(dataJson)
         if(dataJson.items){
            dispatch(addChannelInfo(dataJson?.items?.reduce((acc,item)=>{
             acc[item.id]=item

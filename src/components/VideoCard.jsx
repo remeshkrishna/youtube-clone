@@ -13,8 +13,6 @@ const VideoCard = ({video,channelId}) => {
   }
 
   useEffect(()=>{
-    //fetchChannel()
-    console.log("rendered")
     if(video){
 
      setChannel(channelInfo?.[channelId]?.snippet.thumbnails.default.url)

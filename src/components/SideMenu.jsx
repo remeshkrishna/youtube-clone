@@ -1,8 +1,9 @@
 import React from 'react'
+import SubscriptionList from './SubscriptionList'
 
 const SideMenu = () => {
   return (
-    <div className='flex flex-col ml-2 fixed'>
+    <div className={'flex flex-col ml-2 col-span-1 hover:overflow-y-scroll h-screen scroll-smooth'}>
         <div className='flex p-2 hover:bg-gray-200 rounded-lg gap-8'>
             <img className='w-6 h-6' src='/src/assets/home.png'/>
             <p>Home</p>
@@ -100,6 +101,10 @@ const SideMenu = () => {
             <p>YouTube Kids</p>
         </div>
         <div className='p-2 border-b border-gray-300'></div>
+        <div className='p-2 hover:bg-gray-200 rounded-lg font-semibold'>
+            <p>Subscriptions</p>
+        </div>
+        <SubscriptionList/>
 
         <div className='p-2 hover:bg-gray-200 rounded-lg'></div>
         <div className='p-2 hover:bg-gray-200 rounded-lg'></div>

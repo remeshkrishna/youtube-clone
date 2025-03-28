@@ -24,7 +24,6 @@ const VideoCategoriesMenu = () => {
 
   const handleClick = async(id="")=>{
     let url;
-    console.log(id)
     if(id==""){
       url = `https://www.googleapis.com/youtube/v3/videos?part=snippet&chart=mostPopular&regionCode=IN&maxResults=50&key=${API_KEY}`
     }
@@ -39,10 +38,6 @@ const VideoCategoriesMenu = () => {
   useEffect(()=>{
     fetchVideoCategories()
     handleClick()
-    console.log(videos)
-    // if(videos){
-    //   fetchChannel()
-    // }
     
 
   },[])

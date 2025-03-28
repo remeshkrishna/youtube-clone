@@ -5,7 +5,7 @@ import { Outlet } from 'react-router-dom'
 
 const Body = () => {
   return (
-    <div className='grid grid-cols-10 gap-10 overflow-x-hidden pt-[60px]'>
+    <div className='grid grid-cols-10 gap-10 overflow-x-hidden pt-[60px] h-screen'>
       <SideMenu/>
       <Outlet/>
       {/* <MainScreen/> */}
