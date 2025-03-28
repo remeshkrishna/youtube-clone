@@ -3,6 +3,9 @@
 # Home
 ![alt text](image.png)
 
+# Video Categories
+![alt text](image-4.png)
+
 # Watch Page with comments
 ![alt text](image-1.png)
 
