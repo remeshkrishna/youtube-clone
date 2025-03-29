@@ -8,6 +8,7 @@ import { RouterProvider,createBrowserRouter } from 'react-router-dom'
 import Body from './components/Body.jsx'
 import DisplayVideo from './components/DisplayVideo.jsx'
 import MainScreen from './components/MainScreen.jsx'
+import LiveVideos from './components/LiveVideos.jsx'
 
 const router=createBrowserRouter([
   {
@@ -21,6 +22,10 @@ const router=createBrowserRouter([
       {
         path: '/watch',
         element: <DisplayVideo/>
+      },
+      {
+        path: '/live',
+        element: <LiveVideos/>
       }
     ]
   }

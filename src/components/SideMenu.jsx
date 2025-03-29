@@ -1,7 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import SubscriptionList from './SubscriptionList'
+import { useNavigate } from 'react-router-dom'
+import { API_KEY } from '../utils/constants'
+import { useDispatch } from 'react-redux'
+import { addVideoList } from '../store/videoSlice'
 
 const SideMenu = () => {
+    const dispatch = useDispatch()
+    const navigate = useNavigate()
   return (
     <div className={'flex flex-col ml-2 col-span-1 hover:overflow-y-scroll h-screen scroll-smooth'}>
         <div className='flex p-2 hover:bg-gray-200 rounded-lg gap-8'>
@@ -56,7 +62,7 @@ const SideMenu = () => {
             <img className='w-6 h-6' src='/src/assets/like.png'/>
             <p>Films</p>
         </div>
-        <div className='flex p-2 hover:bg-gray-200 rounded-lg gap-8'>
+        <div onClick={()=>navigate('/live')} className='flex p-2 hover:bg-gray-200 rounded-lg gap-8'>
             <img className='w-6 h-6' src='/src/assets/like.png'/>
             <p>Live</p>
         </div>

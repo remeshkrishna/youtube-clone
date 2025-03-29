@@ -27,6 +27,7 @@ const CommentList = () => {
   )
 }
 
+
 const Comment = ({comment, authorProfileIcon, author, replies}) =>{
     const [hideReply, setHideReply] =useState(true)
     const toggleReply = ()=>{

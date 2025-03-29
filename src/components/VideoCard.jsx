@@ -3,13 +3,13 @@ import { useSelector } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
 
 
-const VideoCard = ({video,channelId}) => {
+const VideoCard = ({video,channelId, type}) => {
   const [channelLogo,setChannel] = useState(null)
   const channelInfo = useSelector((store)=>store.video.channelInfo)
   const navigate = useNavigate()
 
   const handleClick=()=>{
-    navigate('/watch?v='+video.id)
+    navigate('/watch?v='+(!type?video.id:video.id.videoId))
   }
 
   useEffect(()=>{

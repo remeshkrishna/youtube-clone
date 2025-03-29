@@ -13,3 +13,6 @@
 
 # Search with suggestions
 ![alt text](image-3.png)
+
+# Live chat
+![alt text](image-5.png)

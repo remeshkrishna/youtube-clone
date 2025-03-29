@@ -6,7 +6,8 @@ const videoSlice = createSlice({
         videoList: null,
         videoCategories: null,
         searchQueries: null,
-        channelInfo: null
+        channelInfo: null,
+        liveComments: null
     },
     reducers: {
         addVideoList: (state,action)=>{
@@ -21,9 +22,12 @@ const videoSlice = createSlice({
         },
         addChannelInfo: (state,action)=>{
             state.channelInfo = action.payload
+        },
+        addLiveComments: (state,action)=>{
+            state.liveComments = action.payload
         }
     }
 })
 
-export const {addVideoList,addVideoCategory,addSearchQuery,addChannelInfo} = videoSlice.actions
+export const {addVideoList,addVideoCategory,addSearchQuery,addChannelInfo,addLiveComments} = videoSlice.actions
 export default videoSlice.reducer
